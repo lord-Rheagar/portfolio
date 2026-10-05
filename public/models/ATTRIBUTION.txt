@@ -1,0 +1,6 @@
+Bodhi avatar by doctorbunip, created with Meshy (https://www.meshy.ai/).
+Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Generated 2026-10-02 with Meshy 6 Lite from the user's approved likeness concept.
+Adaptation: geometry simplified, textures resized/compressed, Meshopt compression applied for web use.
+Scene adaptation (me.glb): new camera animation, focus anchors, character turn and named eye controls added. Website eye shading is implemented separately in code.
+2026-10-03 Blender adaptation: lens artifact removed, eye sockets and independent eyeballs rebuilt, surface smoothing and material refinement; shader-based eyes replaced by mesh rotation.

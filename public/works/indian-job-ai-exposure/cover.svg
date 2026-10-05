@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-label="indian job ai exposure illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e1720"/><stop offset=".58" stop-color="#14232c"/><stop offset="1" stop-color="#10191f"/>
+  </linearGradient>
+  <radialGradient id="halo"><stop stop-color="#83d6ad" stop-opacity=".22"/><stop offset="1" stop-color="#83d6ad" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#f4f1ea" stroke-opacity=".045"/>
+  </pattern>
+</defs>
+<rect width="1440" height="560" fill="url(#bg)"/>
+<rect width="1440" height="560" fill="url(#grid)"/>
+<circle cx="1090" cy="270" r="430" fill="url(#halo)"/>
+<path d="M666 54V505" stroke="#f4f1ea" stroke-opacity=".12"/>
+<text x="78" y="78" fill="#83d6ad" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">BODHI  /  WORKS</text>
+<text x="78" y="139" fill="#bbc5c6" font-size="18" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">SIDE PROJECT</text>
+<text x="78" y="224" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">AI exposure of</text><text x="78" y="294" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">Indian jobs</text>
+<text x="80" y="384" fill="#b7c2c1" font-size="22" font-family="Arial, sans-serif" font-weight="400" letter-spacing="0">An interactive occupation-level view.</text>
+<path d="M78 465H590" stroke="#83d6ad" stroke-opacity=".55"/>
+<text x="78" y="501" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">ILLUSTRATIVE TREEMAP / LIVE APP CONTAINS DATA</text>
+<rect x="741" y="126" width="607" height="309" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#83d6ad" stroke-opacity=".38"/><text x="769" y="165" fill="#83d6ad" font-size="16" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">OCCUPATION MAP / AI EXPOSURE</text><rect x="769" y="193" width="279" height="193" rx="7" fill="#2aab79"/><rect x="1055" y="193" width="128" height="93" rx="7" fill="#6bd0a2"/><rect x="1190" y="193" width="129" height="93" rx="7" fill="#e2bd62"/><rect x="1055" y="293" width="119" height="93" rx="7" fill="#4bc593"/><rect x="1181" y="293" width="70" height="93" rx="7" fill="#e6a348"/><rect x="1258" y="293" width="61" height="93" rx="7" fill="#dc6c4f"/><text x="788" y="226" fill="#09281e" font-size="15" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">AGRICULTURE</text><text x="1071" y="225" fill="#123329" font-size="12" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0">SERVICES</text><text x="1202" y="225" fill="#4a3211" font-size="12" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0">TRADES</text><text x="1070" y="326" fill="#123329" font-size="12" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0">RETAIL</text><text x="1192" y="326" fill="#4a3211" font-size="12" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0">IT</text><text x="1268" y="326" fill="#4a1917" font-size="12" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0">FIN</text><text x="770" y="415" fill="#b9c9c2" font-size="13" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">SIZE = WORKERS     COLOR = SELECTED LAYER</text>
+</svg>

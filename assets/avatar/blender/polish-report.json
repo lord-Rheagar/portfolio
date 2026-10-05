@@ -1,0 +1,25 @@
+{
+  "blender": "4.5.9 LTS",
+  "source": "avatar-original.glb",
+  "originalFaces": 260728,
+  "lensArtifactFacesRemoved": 509,
+  "oldEyeFacesRemoved": 1037,
+  "gentlySmoothedVertices": 6238,
+  "newEyes": [
+    "eye_L",
+    "eye_R"
+  ],
+  "eyePivotsNative": [
+    [
+      -0.135,
+      0.335,
+      0.211
+    ],
+    [
+      0.123,
+      0.329,
+      0.211
+    ]
+  ],
+  "preserved": "Original face texture, likeness, moustache, hairstyle, clothing, and frame silhouette."
+}

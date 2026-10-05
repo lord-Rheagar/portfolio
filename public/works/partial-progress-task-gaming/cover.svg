@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-label="partial progress task gaming illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e1720"/><stop offset=".58" stop-color="#14232c"/><stop offset="1" stop-color="#10191f"/>
+  </linearGradient>
+  <radialGradient id="halo"><stop stop-color="#bbaeea" stop-opacity=".22"/><stop offset="1" stop-color="#bbaeea" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#f4f1ea" stroke-opacity=".045"/>
+  </pattern>
+</defs>
+<rect width="1440" height="560" fill="url(#bg)"/>
+<rect width="1440" height="560" fill="url(#grid)"/>
+<circle cx="1090" cy="270" r="430" fill="url(#halo)"/>
+<path d="M666 54V505" stroke="#f4f1ea" stroke-opacity=".12"/>
+<text x="78" y="78" fill="#bbaeea" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">BODHI  /  WORKS</text>
+<text x="78" y="139" fill="#bbc5c6" font-size="18" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">WRITING / RESEARCH</text>
+<text x="78" y="224" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">Partial progress</text><text x="78" y="294" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">&amp; task gaming</text>
+<text x="80" y="384" fill="#b7c2c1" font-size="22" font-family="Arial, sans-serif" font-weight="400" letter-spacing="0">A checkpoint-based feasibility study.</text>
+<path d="M78 465H590" stroke="#bbaeea" stroke-opacity=".55"/>
+<text x="78" y="501" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">RESEARCH DESIGN / NOT FINDINGS</text>
+<rect x="752" y="144" width="579" height="263" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#bbaeea" stroke-opacity=".38"/><text x="784" y="187" fill="#bbaeea" font-size="16" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">SAME TASK / DIFFERENT CHECKPOINTS</text><text x="788" y="246" fill="#d6d1e7" font-size="17" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">LOW PROGRESS</text><text x="788" y="332" fill="#d6d1e7" font-size="17" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">HIGH PROGRESS</text><path d="M959 240H1165 M959 326H1165" fill="none" stroke="#bbaeea" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="995" cy="240" r="9" fill="#bbaeea"/><circle cx="1117" cy="326" r="9" fill="#bbaeea"/><path d="M1165 240L1223 283 M1165 326L1223 283" fill="none" stroke="#bbaeea" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1248" cy="283" r="27" fill="#3b3454"/><text x="1239" y="293" fill="#bbaeea" font-size="28" font-family="Arial, sans-serif" font-weight="700" letter-spacing="0">?</text><text x="1071" y="383" fill="#b9b5cb" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">COMPARE BEHAVIOR</text>
+</svg>

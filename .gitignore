@@ -1,0 +1,11 @@
+node_modules/
+dist/
+reference/
+.vite/
+*.log
+archive/
+.tools/
+*.blend1
+assets/avatar/stickered/
+assets/stickers/
+assets/avatar/blender/web-validation.glb

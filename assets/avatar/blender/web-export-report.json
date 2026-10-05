@@ -1,0 +1,44 @@
+{
+  "bytes": 1559448,
+  "triangles": 105053,
+  "eyes": [
+    {
+      "name": "eye_L",
+      "translation": [
+        -0.13500000536441803,
+        0.33500000834465027,
+        0.210999995470047
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": "eye_L geometry"
+    },
+    {
+      "name": "eye_R",
+      "translation": [
+        0.12300000339746475,
+        0.32899999618530273,
+        0.210999995470047
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": "eye_L geometry"
+    }
+  ],
+  "materials": [
+    "Skin · soft satin",
+    "Hair · soft charcoal",
+    "Beard · matte",
+    "Shirt · woven matte",
+    "Glasses · frosted acetate",
+    "Eyes · colored iris and glossy surface"
+  ]
+}

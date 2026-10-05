@@ -1,0 +1,114 @@
+{
+  "bytes": 13740524,
+  "magic": "glTF",
+  "version": 2,
+  "nodes": [
+    {
+      "mesh": 0,
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "meshCount": 1,
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 2,
+            "TEXCOORD_0": 1
+          },
+          "material": 0,
+          "indices": 3,
+          "extensions": null
+        }
+      ],
+      "name": null
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 1.0,
+        "roughnessFactor": 1.0,
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
+        }
+      },
+      "normalTexture": {
+        "index": 2,
+        "texCoord": 0
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 4
+    },
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 5
+    },
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 6
+    }
+  ],
+  "animations": 0,
+  "skins": 0,
+  "extensions": null,
+  "accessors": [
+    {
+      "type": "VEC3",
+      "count": 146289,
+      "componentType": 5126
+    },
+    {
+      "type": "VEC2",
+      "count": 146289,
+      "componentType": 5126
+    },
+    {
+      "type": "VEC3",
+      "count": 146289,
+      "componentType": 5126
+    },
+    {
+      "type": "SCALAR",
+      "count": 782184,
+      "componentType": 5125
+    }
+  ]
+}
