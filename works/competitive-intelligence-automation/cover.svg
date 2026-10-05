@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-label="competitive intelligence automation illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e1720"/><stop offset=".58" stop-color="#14232c"/><stop offset="1" stop-color="#10191f"/>
+  </linearGradient>
+  <radialGradient id="halo"><stop stop-color="#8bd1c3" stop-opacity=".22"/><stop offset="1" stop-color="#8bd1c3" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#f4f1ea" stroke-opacity=".045"/>
+  </pattern>
+</defs>
+<rect width="1440" height="560" fill="url(#bg)"/>
+<rect width="1440" height="560" fill="url(#grid)"/>
+<circle cx="1090" cy="270" r="430" fill="url(#halo)"/>
+<path d="M666 54V505" stroke="#f4f1ea" stroke-opacity=".12"/>
+<text x="78" y="78" fill="#8bd1c3" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">BODHI  /  WORKS</text>
+<text x="78" y="139" fill="#bbc5c6" font-size="18" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">AI AUTOMATION</text>
+<text x="78" y="224" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">Competitive</text><text x="78" y="294" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">intelligence</text>
+<text x="80" y="384" fill="#b7c2c1" font-size="22" font-family="Arial, sans-serif" font-weight="400" letter-spacing="0">Signals into a structured view.</text>
+<path d="M78 465H590" stroke="#8bd1c3" stroke-opacity=".55"/>
+<text x="78" y="501" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">ILLUSTRATED WORKFLOW</text>
+<rect x="742" y="172" width="180" height="196" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#8bd1c3" stroke-opacity=".38"/><rect x="960" y="172" width="180" height="196" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#8bd1c3" stroke-opacity=".38"/><rect x="1178" y="172" width="180" height="196" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#8bd1c3" stroke-opacity=".38"/><path d="M923 269H957 M1141 269H1175" fill="none" stroke="#8bd1c3" stroke-width="3" stroke-opacity="0.65" stroke-linecap="round" stroke-linejoin="round"/><circle cx="923" cy="269" r="5" fill="#8bd1c3"/><circle cx="1141" cy="269" r="5" fill="#8bd1c3"/><text x="766" y="213" fill="#8bd1c3" font-size="16" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">01 / SOURCES</text><text x="766" y="267" fill="#f4f1ea" font-size="26" font-family="Arial, sans-serif" font-weight="600" letter-spacing="0">Market</text><text x="766" y="299" fill="#f4f1ea" font-size="26" font-family="Arial, sans-serif" font-weight="600" letter-spacing="0">signals</text><text x="984" y="213" fill="#8bd1c3" font-size="16" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">02 / SYNTHESIS</text><path d="M990 267H1108 M990 287H1086 M990 307H1122" fill="none" stroke="#dce7e4" stroke-width="5" stroke-opacity="0.75" stroke-linecap="round" stroke-linejoin="round"/><text x="1202" y="213" fill="#8bd1c3" font-size="16" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">03 / OUTPUT</text><rect x="1203" y="249" width="126" height="83" rx="9" fill="#263d42" fill-opacity="0.7" stroke="#8bd1c3" stroke-opacity=".38"/><path d="M1219 312V291L1244 275L1269 299L1296 265L1313 281" fill="none" stroke="#8bd1c3" stroke-width="4" stroke-opacity="0.65" stroke-linecap="round" stroke-linejoin="round"/><text x="778" y="412" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">RESEARCH</text><text x="998" y="412" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">REPORT</text><text x="1215" y="412" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">DASHBOARD</text>
+</svg>

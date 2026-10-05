@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-label="wispr flow gtm thesis illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e1720"/><stop offset=".58" stop-color="#14232c"/><stop offset="1" stop-color="#10191f"/>
+  </linearGradient>
+  <radialGradient id="halo"><stop stop-color="#e8bc86" stop-opacity=".22"/><stop offset="1" stop-color="#e8bc86" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#f4f1ea" stroke-opacity=".045"/>
+  </pattern>
+</defs>
+<rect width="1440" height="560" fill="url(#bg)"/>
+<rect width="1440" height="560" fill="url(#grid)"/>
+<circle cx="1090" cy="270" r="430" fill="url(#halo)"/>
+<path d="M666 54V505" stroke="#f4f1ea" stroke-opacity=".12"/>
+<text x="78" y="78" fill="#e8bc86" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">BODHI  /  WORKS</text>
+<text x="78" y="139" fill="#bbc5c6" font-size="18" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">GTM CASE STUDY</text>
+<text x="78" y="224" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">Wispr Flow</text><text x="78" y="294" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">India GTM</text>
+<text x="80" y="384" fill="#b7c2c1" font-size="22" font-family="Arial, sans-serif" font-weight="400" letter-spacing="0">A creator-led launch thesis.</text>
+<path d="M78 465H590" stroke="#e8bc86" stroke-opacity=".55"/>
+<text x="78" y="501" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">ILLUSTRATED STRATEGY</text>
+<rect x="762" y="137" width="577" height="268" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#e8bc86" stroke-opacity=".38"/><text x="794" y="184" fill="#e8bc86" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">VOICE  →  CREATOR  →  DISTRIBUTION</text><path d="M798 282H836L851 244L868 328L886 220L905 339L923 259L942 305L956 282H1004" fill="none" stroke="#e8bc86" stroke-width="5" stroke-opacity="0.92" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1051" cy="282" r="24" fill="#e8bc86"/><circle cx="1161" cy="238" r="18" fill="#d7d1bb"/><circle cx="1165" cy="332" r="18" fill="#d7d1bb"/><circle cx="1263" cy="282" r="18" fill="#d7d1bb"/><path d="M1075 276L1142 243 M1073 289L1144 326 M1183 241L1244 275 M1184 327L1244 288" fill="none" stroke="#e8bc86" stroke-width="2" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/><text x="802" y="366" fill="#b9c0bd" font-size="15" font-family="Arial, sans-serif" font-weight="600" letter-spacing="1">INDIA CREATOR SYSTEM</text>
+</svg>
