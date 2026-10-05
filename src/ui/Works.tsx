@@ -1,19 +1,21 @@
-import { useEffect, useRef, useState, type Ref } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState, type Ref } from 'react'
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
 import { WORKS, SECTION_COVERS, type WorkListItem, type WorkSection, type WorksLang } from '../data/works'
-import { getWorkDoc } from '../data/workDocs'
 
-const EASE = [0.22, 1, 0.36, 1]
+const loadWorkDetail = () => import('./WorkDetail')
+const WorkDetail = lazy(loadWorkDetail)
 
 // 极简清单的一行：作品名靠左、数据(播放量/标签)靠右、发丝线分隔；整行可点开全屏详情
 function WorkLine({ item, onOpen }: { item: WorkListItem; onOpen: (item: WorkListItem) => void }) {
   const hasMeta = item.meta || (item.tags && item.tags.length)
   return (
     <li className="wk-line">
-      <button className="wk-line-btn" onClick={() => onOpen(item)}>
+      <button
+        className="wk-line-btn"
+        onPointerEnter={() => { void loadWorkDetail() }}
+        onFocus={() => { void loadWorkDetail() }}
+        onClick={() => onOpen(item)}
+      >
         <span className="wk-line-name">{item.name}</span>
         {hasMeta && (
           <span className="wk-line-meta">
@@ -111,108 +113,6 @@ function SectionWorks({
   )
 }
 
-// 全屏沉浸详情：渲染该作品的 md（banner + 标题 + markdown 正文 + 外链）；
-// 无 md 时回退到占位 banner + meta/标签简介
-function WorkDetail({
-  item,
-  data,
-  onClose,
-}: {
-  item: WorkListItem
-  data: WorksLang
-  onClose: () => void
-}) {
-  const [bannerError, setBannerError] = useState(false)
-  const doc = getWorkDoc(item.slug)
-  const title = (doc && doc.title) || item.name
-  const banner = doc && doc.banner
-  // 有 md 详情时展示完整信息；无 md 时详情页只保留标题 + 统一占位文案
-  const link = doc ? doc.link || item.link : null
-  const tags = doc ? doc.tags || item.tags : null
-  // 副标题不含年份；标签单独做 badge 展示
-  const sub = doc ? [item.meta, doc.role].filter(Boolean).join('  ·  ') : ''
-
-  return (
-    <>
-      <motion.div
-        className="wk-detail-backdrop"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-        onClick={onClose}
-      />
-      <motion.div
-        className="wk-detail"
-        initial={{ opacity: 0, scale: 0.985, y: 8 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.99, y: 6 }}
-        transition={{ duration: 0.42, ease: EASE }}
-      >
-        <button className="wk-detail-close" onClick={onClose} aria-label={data.closeLabel}>
-          ✕
-        </button>
-
-        {banner && !bannerError ? (
-          <div className={`wk-detail-banner ${item.slug === 'prospect-intelligence' || item.slug === 'elevenlabs-efficacy-engine' ? 'is-screenshot' : ''}`}>
-            <img src={banner} alt={title} onError={() => setBannerError(true)} />
-          </div>
-        ) : (
-          <div className="wk-detail-banner is-ph" aria-hidden="true">
-            <span className="wk-detail-ph-text">{title}</span>
-          </div>
-        )}
-
-        <article className="wk-detail-article">
-          <header className="wk-detail-head">
-            <h3 className="wk-detail-title">{title}</h3>
-            {sub && <div className="wk-detail-sub">{sub}</div>}
-            {tags && tags.length > 0 && (
-              <div className="wk-detail-tags">
-                {tags.map((t, i) => (
-                  <span key={i} className="wk-badge">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            )}
-          </header>
-
-          {doc && doc.body ? (
-            <div className="wk-md">
-              <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-                {doc.body}
-              </ReactMarkdown>
-            </div>
-          ) : (
-            // 无 md：演示详情页支持的组件 —— 介绍文本 + 图片/视频占位 + 跳转按钮
-            <>
-              <p className="wk-detail-desc">{data.detailPlaceholder}</p>
-              <div className="wk-detail-ph-img" aria-hidden="true">
-                <span className="wk-detail-ph-img-label">{data.phImageLabel}</span>
-              </div>
-              <span className="wk-detail-link is-ph" role="button" aria-disabled="true">
-                {data.phButtonLabel} <span aria-hidden="true">↗</span>
-              </span>
-            </>
-          )}
-
-          {link && (
-            <a
-              className="wk-detail-link"
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {data.visitLabel} <span aria-hidden="true">↗</span>
-            </a>
-          )}
-        </article>
-      </motion.div>
-    </>
-  )
-}
-
 export default function Works({ lang, innerRef }: { lang: 'en' | 'zh'; innerRef: Ref<HTMLElement> }) {
   const data = WORKS[lang]
   const sections = data.sections
@@ -287,16 +187,18 @@ export default function Works({ lang, innerRef }: { lang: 'en' | 'zh'; innerRef:
         </div>
       </div>
 
-      <AnimatePresence>
-        {active && (
-          <WorkDetail
-            key={active.slug || active.name}
-            item={active}
-            data={data}
-            onClose={() => setActive(null)}
-          />
-        )}
-      </AnimatePresence>
+      <Suspense fallback={null}>
+        <AnimatePresence>
+          {active && (
+            <WorkDetail
+              key={active.slug || active.name}
+              item={active}
+              data={data}
+              onClose={() => setActive(null)}
+            />
+          )}
+        </AnimatePresence>
+      </Suspense>
     </section>
   )
 }

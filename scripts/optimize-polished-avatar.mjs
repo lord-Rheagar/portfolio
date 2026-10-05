@@ -13,9 +13,9 @@ await doc.transform(dedup(),weld());
 // Preserve the authored eyeballs, their pivots and fine vertex-color iris detail.
 for(const node of doc.getRoot().listNodes()) {
   if(node.getName()==='BodhiAvatar') for(const p of node.getMesh().listPrimitives())
-    simplifyPrimitive(p,{simplifier:MeshoptSimplifier,ratio:.32,error:.0007,lockBorder:true});
+    simplifyPrimitive(p,{simplifier:MeshoptSimplifier,ratio:.20,error:.001,lockBorder:true});
 }
-await doc.transform(prune(),textureCompress({encoder:sharp,targetFormat:'webp',resize:[2048,2048],quality:92}),meshopt({encoder:MeshoptEncoder,level:'high'}));
+await doc.transform(prune(),textureCompress({encoder:sharp,targetFormat:'webp',resize:[1024,1024],quality:84}),meshopt({encoder:MeshoptEncoder,level:'high'}));
 await io.write('public/models/avatar-polished.glb',doc);
 const result=await io.read('public/models/avatar-polished.glb');
 const eyes=result.getRoot().listNodes().filter(n=>/^eye_[LR]$/.test(n.getName()));

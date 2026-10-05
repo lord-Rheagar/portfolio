@@ -6,8 +6,8 @@ Blender 4.5.9 LTS portable, downloaded from download.blender.org with official S
 
 - bodhi-polished.blend: editable source with review camera and lights, original textures, material separation and actual eye meshes.
 - bodhi-polished.glb: full-resolution character-only export.
-- ../../../public/models/avatar-polished.glb: compressed web character, 1,559,448 bytes and 105,053 triangles.
-- ../../../public/models/me.glb: complete animated website scene, 1,637,936 bytes.
+- ../../../public/models/avatar-polished.glb: compressed web character, 737,480 bytes and 75,575 triangles.
+- ../../../public/models/me.glb: complete animated website scene, 799,756 bytes.
 - before-face.png / after-face.png / after-three-quarter.png / after-portrait.png: matching studio renders and final views.
 - web-face.png / web-gaze-left.png / web-gaze-right.png: re-import of the optimized export in Blender; eye rotation verified at ±22 degrees.
 - polish-report.json, web-export-report.json, gaze-verification.json, scene-verification.json: measurements and validation.
