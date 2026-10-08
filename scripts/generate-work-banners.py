@@ -197,3 +197,56 @@ frame(
     "An interactive occupation-level view.", green, job_market,
     "Illustrative treemap / live app contains data"
 )
+
+orange = "#f2aa70"
+curious = (
+    box(790, 118, 252, 333, orange, "#25313b", 24, .95)
+    + box(811, 151, 210, 234, orange, "#d9eeec", 15, 1)
+    + dot(916, 430, 11, orange)
+    + text(831, 189, "CURIOUS JR", 17, "#233440", 700, spacing=1)
+    + box(834, 210, 165, 88, orange, "#f0ad7d", 13, 1)
+    + text(857, 265, "LEARN", 28, "#233440", 700, spacing=2)
+    + wire("M839 328H990 M839 349H951", "#42636b", 5, .6)
+    + box(1083, 174, 233, 220, orange)
+    + text(1112, 220, "PRODUCT", 18, orange, 700, spacing=1)
+    + text(1112, 249, "TEARDOWN", 18, orange, 700, spacing=1)
+    + wire("M1112 292H1287 M1112 319H1254 M1112 346H1272", "#e7ece7", 5, .7)
+)
+frame(
+    "curious-jr-teardown", "Product teardown", ["Curious Jr", "teardown"],
+    "A competition entry for The Product Folks.", orange, curious,
+    "Illustrated concept / view full deck"
+)
+
+rose = "#dda4c5"
+zoth = (
+    dot(1053, 275, 75, "#3b3150")
+    + dot(1053, 275, 43, rose)
+    + dot(842, 180, 24, rose) + dot(837, 367, 24, rose)
+    + dot(1240, 181, 24, rose) + dot(1252, 369, 24, rose)
+    + dot(1195, 284, 18, "#eee4dd")
+    + wire("M868 190L1014 255 M863 353L1014 294 M1091 255L1215 191 M1091 295L1227 358 M1096 275H1175", rose, 4, .7)
+    + text(1026, 284, "Z", 31, "#342c46", 700)
+    + text(797, 450, "COMMUNITY  /  CONNECTION  /  GROWTH", 16, rose, 700, spacing=1)
+)
+frame(
+    "zoth-community-strategy", "Community strategy", ["Zoth community", "strategy"],
+    "A proposal for building community.", rose, zoth,
+    "Illustrated concept / view full deck"
+)
+
+mudrex = (
+    box(767, 130, 563, 305, teal)
+    + text(802, 171, "PRODUCT REVIEW", 17, teal, 700, spacing=1)
+    + wire("M809 378V326L869 311L933 338L994 246L1055 276L1131 212L1210 229L1286 178", teal, 5, .85)
+    + wire("M809 380H1285 M809 207V380", "#b9c9c6", 2, .4)
+    + dot(994, 246, 11, amber) + dot(1131, 212, 11, amber)
+    + box(835, 225, 125, 54, amber, "#263b42", 10, .95)
+    + text(854, 259, "MUDREX", 18, amber, 700, spacing=1)
+    + text(804, 409, "ANALYZE  /  SYNTHESIZE", 14, "#b9c9c6", 600, spacing=1)
+)
+frame(
+    "mudrex-teardown", "Product teardown", ["Mudrex", "teardown"],
+    "A product analysis project.", teal, mudrex,
+    "Illustrated concept"
+)

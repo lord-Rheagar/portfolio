@@ -1,4 +1,4 @@
-// The reference portfolio's four-card gallery; project details live in
+// The reference portfolio's gallery; project details live in
 // src/content/works/<slug>.md and are displayed by the existing Works UI.
 export interface WorkListItem {
   name: string
@@ -51,9 +51,19 @@ const en: WorksLang = {
   countLabel: (n) => `${n} works`,
   sections: [
     {
-      id: 'automation',
+      id: 'side-projects',
       no: '01',
-      title: 'AI Automation workflows',
+      title: 'Side projects',
+      tagline: 'Tools and data explorations',
+      items: [
+        { name: 'EvidenceLab', meta: 'Research tool', slug: 'evidence-lab' },
+        { name: 'AI Exposure of the Indian Job Market', meta: 'Interactive data app', slug: 'indian-job-ai-exposure' },
+      ],
+    },
+    {
+      id: 'automation',
+      no: '02',
+      title: 'AI Automation workflow',
       tagline: 'Research, knowledge and operations workflows',
       items: [
         { name: 'Prospect intelligence', meta: 'Workflow', slug: 'prospect-intelligence' },
@@ -63,8 +73,19 @@ const en: WorksLang = {
       ],
     },
     {
+      id: 'product-case-studies',
+      no: '03',
+      title: 'Product Teardown and Case studies',
+      tagline: 'Product analysis and community strategy',
+      items: [
+        { name: 'Product Teardown on Curious Jr', meta: 'Product teardown', slug: 'curious-jr-teardown' },
+        { name: 'Community strategy for Zoth', meta: 'Community strategy', slug: 'zoth-community-strategy' },
+        { name: 'Mudrex teardown', meta: 'Product teardown', slug: 'mudrex-teardown' },
+      ],
+    },
+    {
       id: 'gtm',
-      no: '02',
+      no: '04',
       title: 'GTM case studies',
       tagline: 'Growth questions, launch plans and creator strategy',
       items: [
@@ -75,7 +96,7 @@ const en: WorksLang = {
     },
     {
       id: 'writing',
-      no: '03',
+      no: '05',
       title: 'Writing',
       tagline: 'Research and essays',
       items: [
@@ -84,23 +105,14 @@ const en: WorksLang = {
         { name: 'Exploring Moats & Defensibility of Stablecoins', meta: 'Article', slug: 'stablecoin-moats' },
       ],
     },
-    {
-      id: 'side-projects',
-      no: '04',
-      title: 'Side Projects',
-      tagline: 'Tools and data explorations',
-      items: [
-        { name: 'EvidenceLab', meta: 'Research tool', slug: 'evidence-lab' },
-        { name: 'AI Exposure of the Indian Job Market', meta: 'Interactive data app', slug: 'indian-job-ai-exposure' },
-      ],
-    },
   ],
 }
 
 export const WORKS: Record<'en' | 'zh', WorksLang> = { en, zh: en }
-// Use images from Bodhi's published work for the reference-style gallery.
+// Use published media where available and an illustrated cover for the new section.
 export const SECTION_COVERS: Record<string, string> = {
   automation: `${import.meta.env.BASE_URL}works/prospect-intelligence/workflow.png`,
+  'product-case-studies': `${import.meta.env.BASE_URL}works/curious-jr-teardown/cover.svg`,
   gtm: `${import.meta.env.BASE_URL}works/elevenlabs-efficacy-engine/dashboard.png`,
   writing: `${import.meta.env.BASE_URL}works/solana-security-incidents/cover.jpg`,
   'side-projects': `${import.meta.env.BASE_URL}works/evidence-lab/cover.png`,
