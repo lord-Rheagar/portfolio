@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-label="curious jr teardown illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0e1720"/><stop offset=".58" stop-color="#14232c"/><stop offset="1" stop-color="#10191f"/>
+  </linearGradient>
+  <radialGradient id="halo"><stop stop-color="#f2aa70" stop-opacity=".22"/><stop offset="1" stop-color="#f2aa70" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#f4f1ea" stroke-opacity=".045"/>
+  </pattern>
+</defs>
+<rect width="1440" height="560" fill="url(#bg)"/>
+<rect width="1440" height="560" fill="url(#grid)"/>
+<circle cx="1090" cy="270" r="430" fill="url(#halo)"/>
+<path d="M666 54V505" stroke="#f4f1ea" stroke-opacity=".12"/>
+<text x="78" y="78" fill="#f2aa70" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">BODHI  /  WORKS</text>
+<text x="78" y="139" fill="#bbc5c6" font-size="18" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">PRODUCT TEARDOWN</text>
+<text x="78" y="224" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">Curious Jr</text><text x="78" y="294" fill="#f4f1ea" font-size="62" font-family="Georgia, serif" font-weight="500" letter-spacing="0">teardown</text>
+<text x="80" y="384" fill="#b7c2c1" font-size="22" font-family="Arial, sans-serif" font-weight="400" letter-spacing="0">A competition entry for The Product Folks.</text>
+<path d="M78 465H590" stroke="#f2aa70" stroke-opacity=".55"/>
+<text x="78" y="501" fill="#aab8b7" font-size="14" font-family="Arial, sans-serif" font-weight="600" letter-spacing="2">ILLUSTRATED CONCEPT / VIEW FULL DECK</text>
+<rect x="790" y="118" width="252" height="333" rx="24" fill="#25313b" fill-opacity="0.95" stroke="#f2aa70" stroke-opacity=".38"/><rect x="811" y="151" width="210" height="234" rx="15" fill="#d9eeec" fill-opacity="1" stroke="#f2aa70" stroke-opacity=".38"/><circle cx="916" cy="430" r="11" fill="#f2aa70"/><text x="831" y="189" fill="#233440" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">CURIOUS JR</text><rect x="834" y="210" width="165" height="88" rx="13" fill="#f0ad7d" fill-opacity="1" stroke="#f2aa70" stroke-opacity=".38"/><text x="857" y="265" fill="#233440" font-size="28" font-family="Arial, sans-serif" font-weight="700" letter-spacing="2">LEARN</text><path d="M839 328H990 M839 349H951" fill="none" stroke="#42636b" stroke-width="5" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="1083" y="174" width="233" height="220" rx="18" fill="#17212a" fill-opacity="0.8" stroke="#f2aa70" stroke-opacity=".38"/><text x="1112" y="220" fill="#f2aa70" font-size="18" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">PRODUCT</text><text x="1112" y="249" fill="#f2aa70" font-size="18" font-family="Arial, sans-serif" font-weight="700" letter-spacing="1">TEARDOWN</text><path d="M1112 292H1287 M1112 319H1254 M1112 346H1272" fill="none" stroke="#e7ece7" stroke-width="5" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
